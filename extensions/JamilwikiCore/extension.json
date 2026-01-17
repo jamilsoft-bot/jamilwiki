@@ -1,0 +1,31 @@
+{
+    "name": "JamilwikiCore",
+    "author": [
+        "Jamilwiki Contributors"
+    ],
+    "version": "1.0.0",
+    "url": "https://example.org/jamilwiki",
+    "description": "Core platform extension for the Jamilwiki wiki farm.",
+    "type": "other",
+    "license-name": "GPL-2.0-or-later",
+    "AutoloadClasses": {
+        "Jamilwiki\\Core\\Hooks": "includes/Hooks.php",
+        "Jamilwiki\\Core\\SpecialJamilwikiDashboard": "includes/SpecialJamilwikiDashboard.php",
+        "Jamilwiki\\Core\\SpecialCreateWiki": "includes/SpecialCreateWiki.php",
+        "Jamilwiki\\Core\\SpecialManageWiki": "includes/SpecialManageWiki.php"
+    },
+    "Hooks": {
+        "SkinBuildSidebar": "Jamilwiki\\Core\\Hooks::onSkinBuildSidebar",
+        "BeforePageDisplay": "Jamilwiki\\Core\\Hooks::onBeforePageDisplay"
+    },
+    "SpecialPages": {
+        "JamilwikiDashboard": "Jamilwiki\\Core\\SpecialJamilwikiDashboard",
+        "CreateWiki": "Jamilwiki\\Core\\SpecialCreateWiki",
+        "ManageWiki": "Jamilwiki\\Core\\SpecialManageWiki"
+    },
+    "MessagesDirs": {
+        "JamilwikiCore": [
+            "i18n"
+        ]
+    }
+}
