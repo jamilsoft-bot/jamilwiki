@@ -1,0 +1,64 @@
+.jw-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #222;
+}
+
+.jw-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.jw-logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.jw-title {
+    color: #555;
+}
+
+.jw-content {
+    display: flex;
+    flex: 1;
+}
+
+.jw-sidebar {
+    width: 220px;
+    padding: 1.5rem;
+    background: #fafafa;
+    border-right: 1px solid #e2e2e2;
+}
+
+.jw-main {
+    flex: 1;
+    padding: 2rem;
+}
+
+.jw-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #f7f7f7;
+    border-top: 1px solid #e2e2e2;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 900px) {
+    .jw-content {
+        flex-direction: column;
+    }
+
+    .jw-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e2e2e2;
+    }
+}

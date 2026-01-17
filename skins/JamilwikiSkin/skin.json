@@ -1,0 +1,25 @@
+{
+    "name": "JamilwikiSkin",
+    "type": "skin",
+    "author": [
+        "Jamilwiki Contributors"
+    ],
+    "url": "https://example.org/jamilwiki",
+    "version": "1.0.0",
+    "license-name": "GPL-2.0-or-later",
+    "AutoloadClasses": {
+        "SkinJamilwikiSkin": "includes/SkinJamilwikiSkin.php",
+        "JamilwikiSkinTemplate": "includes/JamilwikiSkinTemplate.php"
+    },
+    "ResourceModules": {
+        "skins.jamilwikiskin.styles": {
+            "styles": [
+                "resources/skin.css"
+            ]
+        }
+    },
+    "ValidSkinNames": {
+        "jamilwikis": "JamilwikiSkin"
+    },
+    "default": "jamilwikis"
+}
