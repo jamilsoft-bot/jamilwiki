@@ -1,0 +1,42 @@
+{
+    "name": "JamilOrg",
+    "type": "skin",
+    "author": [
+        "Jamilsoft Technologies"
+    ],
+    "url": "https://jamilsoft.com.ng",
+    "version": "1.0.0",
+    "license-name": "GPL-2.0-or-later",
+    "AutoloadClasses": {
+        "SkinJamilOrg": "includes/SkinJamilOrg.php",
+        "JamilOrgTemplate": "includes/JamilOrgTemplate.php"
+    },
+    "ResourceModules": {
+        "skins.jamilorg.styles": {
+            "styles": [
+                "resources/skin.css"
+            ]
+        },
+        "skins.jamilorg.scripts": {
+            "scripts": [
+                "resources/skin.js"
+            ],
+            "dependencies": [
+                "mediawiki.util"
+            ],
+            "targets": [
+                "desktop",
+                "mobile"
+            ]
+        }
+    },
+    "ValidSkinNames": {
+        "jamilorg": "JamilOrg"
+    },
+    "default": "jamilorg",
+    "config": {
+        "JamilOrgSkinLogo": "https://jamilsoft.com.ng/assets/images/icon.png",
+        "JamilOrgSkinFavicon": "https://jamilsoft.com.ng/assets/images/icon.png",
+        "JamilOrgSkinPrimaryColor": "#1d4ed8"
+    }
+}

@@ -1,0 +1,125 @@
+/*
+ * JamilOrg custom styles to complement Tailwind utility classes.
+ * Keep this lightweight for MediaWiki compatibility and readability.
+ */
+.jamilorg-root {
+    color: #0f172a;
+    background-color: #f8fafc;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.jamilorg-content a {
+    color: var(--jamilorg-primary);
+    text-decoration: none;
+}
+
+.jamilorg-content a:hover {
+    text-decoration: underline;
+}
+
+.jamilorg-content h1,
+.jamilorg-content h2,
+.jamilorg-content h3,
+.jamilorg-content h4,
+.jamilorg-content h5,
+.jamilorg-content h6 {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.jamilorg-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.jamilorg-content table th,
+.jamilorg-content table td {
+    border: 1px solid #e2e8f0;
+    padding: 0.5rem 0.75rem;
+}
+
+.jamilorg-content table th {
+    background: #f1f5f9;
+    text-align: left;
+}
+
+.jamilorg-content pre,
+.jamilorg-content code,
+.jamilorg-content .mw-code {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.375rem;
+}
+
+.jamilorg-content pre {
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.jamilorg-content blockquote {
+    border-left: 4px solid var(--jamilorg-primary);
+    padding-left: 1rem;
+    color: #475569;
+    margin: 1rem 0;
+}
+
+.jamilorg-content .toc {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.jamilorg-content .toc h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.jamilorg-content .mw-editsection {
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.jamilorg-content .mw-editsection a {
+    color: #64748b;
+}
+
+.jamilorg-content .mw-editsection a:hover {
+    color: var(--jamilorg-primary);
+}
+
+.mw-body-content {
+    line-height: 1.7;
+}
+
+.jamilorg-sidebar {
+    z-index: 30;
+}
+
+.jamilorg-sidebar.open {
+    transform: translateX(0);
+}
+
+.jamilorg-user-menu.open {
+    display: block;
+}
+
+.jamilorg-header a:focus,
+.jamilorg-sidebar a:focus,
+.jamilorg-user-toggle:focus,
+.jamilorg-sidebar-toggle:focus,
+.jamilorg-sidebar-close:focus {
+    outline: 2px solid var(--jamilorg-primary);
+    outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+    .jamilorg-sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+}
